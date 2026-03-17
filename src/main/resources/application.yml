@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: my-market-app
+
+  datasource:
+    url: "${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/main_db}"
+    username: "${SPRING_DATASOURCE_USERNAME:main_user}"
+    password: "${SPRING_DATASOURCE_PASSWORD:password}"
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
