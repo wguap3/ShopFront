@@ -1,11 +1,15 @@
 package ru.yandex.practicum.mymarket.orderItem.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import ru.yandex.practicum.mymarket.item.model.Item;
 import ru.yandex.practicum.mymarket.order.model.Order;
 
 @Entity
 @Table(name = "order_items")
+@Getter
+@Setter
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
