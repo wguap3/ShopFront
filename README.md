@@ -28,8 +28,8 @@
 **1. Клонируйте репозиторий:**
 
 ```bash
-git clone https://github.com/wguap3/my-market-app.git
-cd my-market-app
+git clone https://github.com/wguap3/ShopFront.git
+cd ShopFront
 ```
 
 **2. Соберите проект:**
